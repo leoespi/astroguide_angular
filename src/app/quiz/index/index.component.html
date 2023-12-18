@@ -1,0 +1,44 @@
+
+
+<H1>QWEEEEEEEEE</H1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Duración</th>
+            <th>Pregunta</th>
+            <th>Respuesta 1</th>
+            <th>Respuesta 2</th>
+            <th>Respuesta 3</th>
+            <th>Respuesta 4</th>
+        </tr>
+
+
+
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let quiz of listarQuiz">
+
+            <td>{{quiz.id}}</td>
+            <td>{{quiz.Titulo}}</td>
+            <td>{{quiz.Duracion}}</td>
+            <td>{{quiz.Pregunta}}</td>
+            <td>{{quiz.Respuesta1}}</td>
+            <td>{{quiz.Respuesta2}}</td>
+            <td>{{quiz.Respuesta3}}</td>
+            <td>{{quiz.Respuesta4}}</td>
+            
+            <td>
+               <button type="button" (click)="eliminarQuiz(quiz.id)">Eliminar</button>
+            </td>
+            <br>
+             <td>
+               <button type="button" (click)="editarQuiz(quiz.id)">Editar</button>
+             </td>
+       </tr>
+    </tbody>
+    
+   </table>
+

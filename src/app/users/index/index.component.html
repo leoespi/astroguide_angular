@@ -1,0 +1,30 @@
+<h1>Lista de Usuario</h1>
+<table class="table">
+    
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+    
+    <tbody>
+        <tr *ngFor="let users of listaUserss">
+            <td>{{users.id}}</td>
+            <td>{{users.name}}</td>
+            <td>{{users.email}}</td>
+            <td>{{users.password}}</td>
+            
+            <td>
+               <button type="button" (click)="eliminarUsers(users.id)">Eliminar</button>
+            </td>
+            <br>
+             <td>
+               <button type="button" (click)="editarUsers(users.id)">Editar</button>
+             </td>
+       </tr>
+    </tbody>
+    
+   </table>

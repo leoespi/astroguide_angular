@@ -1,0 +1,11 @@
+<table>
+    <tr *ngFor="let logros of listaLogros">
+        <td> {{ logros.id }}</td>
+        <td> {{ logros.Nombre_del_Logro }}</td>
+        <td> {{ logros.Rareza }}</td>
+        <td>
+            <button type="button" (click)="eliminarLogro(logros.id)">Eliminar</button>
+            <button type="button" (click)="editarLogro(logros.id)">Editar</button>
+        </td>
+    </tr>
+</table>

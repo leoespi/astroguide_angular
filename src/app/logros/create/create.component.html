@@ -1,0 +1,17 @@
+<form [formGroup]= "logrosForm" (ngSubmit)="agregarLogro()">
+  <div class="form-group">
+    <label for="titulo">Nombre del Logro</label> <br>
+    <input formControlName="Nombre_del_Logro" matInput type="text" class="form-control" id="Nombre_del_Logro" name="Nombre_del_Logro">
+</div>
+<div class="form-group">
+  <label for="titulo">Rareza</label> <br>
+  <input formControlName="Rareza" matInput type="text" class="form-control" id="Rareza" name="Rareza">
+</div>
+<div class="form-group">
+  <label for="titulo">ID del Usuario</label> <br>
+  <input formControlName="user_id" matInput type="number" class="form-control" id="user_id" name="user_id">
+</div>
+
+  <button>Crear</button>
+
+</form>
